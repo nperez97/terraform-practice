@@ -38,3 +38,9 @@ terraform.rc
 
 #.venv
 .venv
+
+# .lock file
+*.terraform*
+
+# infracost folder
+.infracost
