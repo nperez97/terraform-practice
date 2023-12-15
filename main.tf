@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "my-first-server" {
-  ami           = "ami-0fc5d935ebf8bc3bc"
+  ami           = var.ec2_ami
   instance_type = var.ec2_instance_type
 
   tags = {
